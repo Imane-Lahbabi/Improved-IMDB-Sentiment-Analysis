@@ -1,0 +1,29 @@
+MODEL 2: BIDIRECTIONAL LSTM — RESULTS
+============================================================
+
+model                              : Bidirectional LSTM
+architecture                       : Embedding(20k,128) -> SpatialDropout -> BiLSTM(64) -> BiLSTM(32) -> Dense(64) -> Dense(1)
+vocab_size                         : 20000
+max_sequence_len                   : 250
+embedding_dim                      : 128
+optimizer                          : Adam (lr=1e-3, ReduceLROnPlateau)
+test_loss                          : 0.3661
+test_accuracy                      : 0.8657
+precision                          : 0.8666
+recall                             : 0.8656
+f1_score                           : 0.8661
+epochs_trained                     : 10
+
+Confusion Matrix:
+  TN=4277  FP=663
+  FN=669  TP=4308
+
+Classification Report:
+              precision    recall  f1-score   support
+
+    Negative       0.86      0.87      0.87      4940
+    Positive       0.87      0.87      0.87      4977
+
+    accuracy                           0.87      9917
+   macro avg       0.87      0.87      0.87      9917
+weighted avg       0.87      0.87      0.87      9917

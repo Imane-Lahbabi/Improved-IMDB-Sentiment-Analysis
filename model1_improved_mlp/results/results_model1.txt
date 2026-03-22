@@ -1,0 +1,28 @@
+MODEL 1: IMPROVED MLP — RESULTS
+============================================================
+
+model                    : Improved MLP
+architecture             : [5, 128, 64, 1]
+optimizer                : Adam
+dropout_rate             : 0.3
+features                 : 5
+test_accuracy            : 0.7704
+precision                : 0.7688
+recall                   : 0.7758
+f1_score                 : 0.7723
+best_val_loss            : 0.4751
+epochs_trained           : 27
+
+Confusion Matrix:
+  TN=3779  FP=1161
+  FN=1116  TP=3861
+
+Classification Report:
+              precision    recall  f1-score   support
+
+    Negative       0.77      0.76      0.77      4940
+    Positive       0.77      0.78      0.77      4977
+
+    accuracy                           0.77      9917
+   macro avg       0.77      0.77      0.77      9917
+weighted avg       0.77      0.77      0.77      9917
